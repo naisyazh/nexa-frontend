@@ -1,0 +1,46 @@
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 18px 20px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--tx-xl);
+  transition: color 0.3s;
+}
+
+.pct {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--tx-xl);
+  letter-spacing: -1px;
+  line-height: 1;
+  margin: 4px 0 8px;
+  transition: color 0.3s;
+}
+
+/* Tooltip */
+.tooltip {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-sm);
+  padding: 8px 12px;
+  box-shadow: var(--sh-md);
+}
+.ttLabel {
+  font-size: 11px;
+  color: var(--tx-xs);
+  margin-bottom: 2px;
+}
+.ttVal {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--purple-600);
+}

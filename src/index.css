@@ -1,0 +1,99 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Purple palette */
+  --purple-50:  #faf5ff;
+  --purple-100: #f3e8ff;
+  --purple-200: #e9d5ff;
+  --purple-500: #a855f7;
+  --purple-600: #7c3aed;
+  --purple-700: #6d28d9;
+
+  /* Semantic tokens — light */
+  --bg-app:    #f5f6fa;
+  --bg-card:   #ffffff;
+  --bg-input:  #f3f4f6;
+  --bg-hover:  #f3f4f6;
+  --bg-active: rgba(124,58,237,0.09);
+
+  --border:    #e5e7eb;
+  --border-md: #d1d5db;
+
+  --tx-xs:  #9ca3af;
+  --tx-sm:  #6b7280;
+  --tx-md:  #374151;
+  --tx-lg:  #1f2937;
+  --tx-xl:  #111827;
+
+  --sh-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --sh:    0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.05);
+  --sh-md: 0 4px 12px rgba(0,0,0,0.07);
+  --sh-lg: 0 10px 30px rgba(0,0,0,0.10);
+
+  --r-sm: 6px;
+  --r:    10px;
+  --r-lg: 14px;
+  --r-xl: 20px;
+
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--tx-md);
+  background: var(--bg-app);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Dark mode (applied to <html>) ──────────────────── */
+html.dark {
+  --bg-app:    #12131a;
+  --bg-card:   #1c1e2a;
+  --bg-input:  #252836;
+  --bg-hover:  #252836;
+  --bg-active: rgba(124,58,237,0.18);
+
+  --border:    #2a2d3e;
+  --border-md: #35384d;
+
+  --tx-xs:  #4b5068;
+  --tx-sm:  #6b7280;
+  --tx-md:  #9ca3c0;
+  --tx-lg:  #c9d1ec;
+  --tx-xl:  #e2e8ff;
+
+  --sh-sm: 0 1px 2px rgba(0,0,0,0.4);
+  --sh:    0 1px 3px rgba(0,0,0,0.5);
+  --sh-md: 0 4px 12px rgba(0,0,0,0.5);
+  --sh-lg: 0 10px 30px rgba(0,0,0,0.6);
+
+  color: var(--tx-md);
+  background: var(--bg-app);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg-app);
+  transition: background 0.3s, color 0.3s;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  text-align: left;
+}
+
+button   { cursor: pointer; border: none; background: none; font-family: inherit; }
+a        { text-decoration: none; color: inherit; }
+ul, ol   { list-style: none; }
+input, textarea, select { font-family: inherit; font-size: inherit; outline: none; }
+
+::-webkit-scrollbar       { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-md); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--tx-xs); }

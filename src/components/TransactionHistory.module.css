@@ -1,0 +1,81 @@
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  padding: 18px 20px;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--tx-xl);
+  margin-bottom: 14px;
+  transition: color 0.3s;
+}
+
+.tableWrap { overflow-x: auto; }
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.table thead th {
+  text-align: left;
+  padding: 6px 12px 10px;
+  font-size: 11.5px;
+  font-weight: 500;
+  color: var(--tx-xs);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.row { transition: background 0.1s; }
+.row:hover { background: var(--bg-hover); }
+.row td {
+  padding: 11px 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+  transition: border-color 0.3s;
+}
+.row:last-child td { border-bottom: none; }
+
+.name {
+  font-weight: 600;
+  color: var(--tx-lg);
+  white-space: nowrap;
+  transition: color 0.3s;
+}
+.product {
+  color: var(--tx-md);
+  white-space: nowrap;
+  transition: color 0.3s;
+}
+.date, .qty {
+  color: var(--tx-sm);
+  white-space: nowrap;
+  font-size: 12px;
+  transition: color 0.3s;
+}
+.amount {
+  font-weight: 600;
+  color: var(--tx-xl);
+  white-space: nowrap;
+  transition: color 0.3s;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11.5px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.done    { background: rgba(34,197,94,0.12); color: #15803d; }
+.pending { background: rgba(234,179,8,0.12); color: #a16207; }
+.delayed { background: rgba(239,68,68,0.12); color: #b91c1c; }
